@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 unsigned long Fact(unsigned int);
 
@@ -16,6 +17,7 @@ int main() {
         sum+=Fact(i);
     }
     printf("sum = %d",sum);
+    system("pause");
     return 0;
 }
 

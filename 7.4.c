@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int LCM(int, int);
 
@@ -7,6 +8,7 @@ int main() {
     printf("Input a b:");
     scanf("%d%d", &a, &b);
     printf("LCM = %d", LCM(a, b));
+    system("pause");
     return 0;
 }
 

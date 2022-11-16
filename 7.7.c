@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int Gcd1(int, int); //用穷举法计算两个正整数的最大公约数
 int Gcd2(int, int); //用欧几里得算法计算两个正整数的最大公约数
@@ -12,16 +13,16 @@ int main() {
     scanf("%d", &s);
     switch (s) {
         case 1:
-            printf("GCD = %d", Gcd1(a, b));
+            printf("GCD = %d\n", Gcd1(a, b));
             break;
         case 2:
-            printf("GCD = %d", Gcd2(a, b));
+            printf("GCD = %d\n", Gcd2(a, b));
             break;
         case 3:
-            printf("GCD = %d", Gcd3(a, b));
+            printf("GCD = %d\n", Gcd3(a, b));
             break;
     }
-
+    system("pause");
     return 0;
 }
 

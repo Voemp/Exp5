@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int max(int, int); //º¯ÊıÉùÃ÷
 int main() {
@@ -6,6 +7,7 @@ int main() {
     printf("Please enter two number:");
     scanf("%d%d", &a, &b);
     printf("max = %d", max(a, b));
+    system("pause");
     return 0;
 }
 

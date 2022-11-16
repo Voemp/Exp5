@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 unsigned long Fact(unsigned int);
 
@@ -14,6 +15,7 @@ int main() {
     for (int i = 1; i <= n; ++i) {
         printf("%d! = %d\n", i, Fact(i));
     }
+    system("pause");
     return 0;
 }
 
