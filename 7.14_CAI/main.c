@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include <windows.h>
+#include <time.h>
 #include "MakeNumber.h"
 #include "IsRight.h"
 #include "RorW.h"
 #include "Operator.h"
 
 int main() {
+    srand(time(NULL));
     printf("欢迎来到小学生计算机辅助教学系统!\n共有十道计算题，请做好答题准备。\n");
     int a,b,score;
     char o;
@@ -18,7 +19,6 @@ int main() {
 
         for (int i = 1; i <= 10; ++i) {
             a= MakeNumber(10);
-            Sleep(1000); //等待1秒使随机种子产生变化
             b= MakeNumber(10);
             o=Operator();
             printf("第%d题:\n",i);
